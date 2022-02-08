@@ -9,21 +9,6 @@ public class Cliente {
 	private String cidadeCliente;
 	private String ufCliente;
 
-	public Cliente() {
-
-	}
-
-	public Cliente(String nomeCliente, String emailCliente, String senhaCliente, String enderecoCliente,
-			String cidadeCliente, String ufCliente) {
-		super();
-		this.nomeCliente = nomeCliente;
-		this.emailCliente = emailCliente;
-		this.senhaCliente = senhaCliente;
-		this.enderecoCliente = enderecoCliente;
-		this.cidadeCliente = cidadeCliente;
-		this.ufCliente = ufCliente;
-	}
-
 	public Integer getIdCliente() {
 		return idCliente;
 	}
@@ -78,6 +63,21 @@ public class Cliente {
 
 	public void setUfCliente(String ufCliente) {
 		this.ufCliente = ufCliente;
+	}
+
+	public Cliente(String nomeCliente, String emailCliente, String senhaCliente, String enderecoCliente,
+			String cidadeCliente, String ufCliente) {
+		super();
+		this.nomeCliente = nomeCliente;
+		this.emailCliente = emailCliente;
+		this.senhaCliente = senhaCliente;
+		this.enderecoCliente = enderecoCliente;
+		this.cidadeCliente = cidadeCliente;
+		this.ufCliente = ufCliente;
+	}
+
+	public Cliente() {
+
 	}
 
 }
